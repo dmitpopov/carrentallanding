@@ -104,6 +104,10 @@ body
 
 .autopark__item-img
   height: 246px
+  transition: all 0.3s ease
+  &:hover
+    transform: scale(1.2)
+    cursor: pointer
 
 .autopark__item-head
   text-align: center
@@ -130,6 +134,8 @@ body
 .autopark__details-item-img
   height: 34px
   width: 34px
+
+
 
 
 .autopark__details-item-head
@@ -161,13 +167,21 @@ body
     //Booking form styles
 
 .booking-form
+  position: relative
   background-color: #fff
   margin: 0
   padding: 100px 0 0 360px
-  background-image: url(./img/rolls.png)
-  background-size: 969px 460px
-  background-repeat: no-repeat
-  background-position: bottom right
+  //background-image: url(./img/rolls.png)
+  //background-size: 969px 460px
+  //background-repeat: no-repeat
+  //background-position: bottom right
+
+.booking-form__img
+  position: absolute
+  width: 969px
+  height: 506px
+  bottom: 0
+  right: 0
 
 .booking-form__head
   margin: 0
